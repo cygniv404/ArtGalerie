@@ -1,0 +1,99 @@
+.search-bar-container {
+  display: flex;
+  flex-direction: row;
+  gap: 16px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  position: relative;
+}
+
+.search-field {
+  background: rgba(31, 31, 31, 0.4);
+  color: #fff;
+  border-radius: 80px;
+  border-style: solid;
+  border-color: rgba(255, 255, 255, 0.15);
+  border-width: 1px;
+  padding: 8px 24px 8px 24px;
+  display: none;
+  flex-direction: row;
+  gap: 24px;
+  align-items: center;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  height: 48px;
+  font-size: 24px;
+  position: relative;
+}
+
+.search-field::placeholder {
+  /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: rgba(255, 255, 255, 0.2);
+  text-align: left;
+  font:
+    500 24px/32px "Roboto",
+    sans-serif;
+  position: relative;
+  flex: 1;
+}
+
+.search-field:-ms-input-placeholder {
+  /* Internet Explorer 10-11 */
+  color: rgba(255, 255, 255, 0.2);
+  text-align: left;
+  font:
+    500 24px/32px "Roboto",
+    sans-serif;
+  position: relative;
+  flex: 1;
+}
+
+.search-field::-ms-input-placeholder {
+  /* Microsoft Edge */
+  color: rgba(255, 255, 255, 0.2);
+  text-align: left;
+  font:
+    500 24px/32px "Roboto",
+    sans-serif;
+  position: relative;
+  flex: 1;
+}
+
+.search-bar-submit-button {
+  color: #ffffff;
+  background: #e10856;
+  border: 1px solid #e10856;
+  border-radius: 40px;
+  padding: 16px;
+  flex-direction: row;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  min-width: 61px;
+  height: 48px;
+  position: relative;
+  box-shadow: 0px 16px 16px 4px rgba(0, 0, 0, 0.12);
+}
+
+.search-bar-submit-button-label {
+  text-align: center;
+  font:
+    500 18px/24px "Roboto",
+    sans-serif;
+  position: relative;
+  flex: 1;
+  display: none;
+}
+
+.search-bar-submit-button:hover {
+  color: #ca35f7;
+  background: transparent;
+  border: 1px solid #ca35f7;
+  transition: all 0.2s ease-out;
+}
+
+.search-bar-submit-button:hover svg * {
+  stroke: #ca35f7;
+}
